@@ -1,0 +1,89 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+h1, h2, h3, p, li {
+    color: #fff; /* Set text color to white */
+}
+
+section {
+    padding: 50px;
+    margin: 20px;
+    background-color: #000000;
+}
+
+#logo {
+    max-width: 20%; /* Set the maximum width to 50% of its container */
+    height: 20%;   /* Maintain the aspect ratio while scaling down */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#logo {
+max-width: 150px;
+height: auto;
+display: block;
+margin: 0 auto;
+border: 2px solid transparent; /* Set initial border color to transparent */
+box-shadow: 0px 0px 10px 2px #3498db; /* Add box-shadow for the glowing effect with the desired color */
+transition: border-color 0.3s ease-in-out; /* Add transition for a smooth effect */
+}
+
+#logo:hover {
+border-color: #3498db; /* Change the border color on hover to match the box-shadow color */
+}
+/* Keyframe animation for rainbow glow effect */
+@keyframes rainbowGlow {
+    0% { color: #FF0000; }
+    16% { color: #FF9900; }
+    33% { color: #FFFF00; }
+    50% { color: #00FF00; }
+    66% { color: #0000FF; }
+    83% { color: #9900FF; }
+    100% { color: #FF0000; }
+}
+
+/* Apply the animation to the headings */
+h2, h3 {
+    display: inline-block;
+    animation: rainbowGlow 5s linear infinite;
+}
+#logo {
+border: 2px solid;
+border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+border-image-slice: 1;
+}
+
